@@ -1,0 +1,5 @@
+<Bundle name='vps'>
+  <Group name='ubuntu'>
+    <Package name='ubuntu-minimal'/>
+  </Group>
+</Bundle>

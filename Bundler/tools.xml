@@ -1,0 +1,32 @@
+<Bundle name ='tools'>
+
+  <!-- Tools -->
+  <Package name='bzr'/>
+  <Package name='cvs'/>
+  <Package name='screen'/>
+  <Package name='subversion'/>
+  <Package name='unzip'/>
+  <Package name='vnstat'/>
+
+  <Action name='vnstat_db_eth0'/>
+
+  <!-- Debian Only -->
+  <Group name='debian'>
+    <Package name='info'/>
+  </Group>
+
+  <!-- Ubuntu Only -->
+  <Group name='ubuntu'>
+    <Service name='vnstat'/>
+
+    <!-- AWS Only -->
+    <Group name='amazon-web-services'>
+      <Action name='restart_apparmor'/>
+    </Group>
+  </Group>
+
+  <!-- CentOS Only -->
+  <Group name='centos'>
+    <Path name='/etc/cron.d/vnstat' altsrc='/vnstat/cron'/>
+  </Group>
+</Bundle>

@@ -1,0 +1,30 @@
+<Bundle name='mysql-packages'>
+
+  <!-- Debian Only -->
+  <Group name='debian'>
+    <Package name='mysql-client-5.1'/>
+    <Package name='mysql-server-5.1'/>
+    <Package name='mysql-server-core-5.1'/>
+  </Group>
+
+
+  <!-- Ubuntu/Deb Only -->
+  <Group name='deb'>
+    <Package name='mysql-client'/>
+    <Package name='mysql-server'/>
+
+    <Action name='clear_ib_logfiles'/>
+  </Group>
+
+  <!-- CentOS Only -->
+  <Group name='centos'>
+    <Package name='mysql51'/>
+    <Package name='mysql51-libs'/>
+    <Package name='mysql51-server'/>
+    <Package name='mysqlclient15'/>
+    <Package name='mysqlclient15-devel'/>
+    <Package name='php52-mysql'/>
+    <Package name='php52-pdo'/>
+  </Group>
+</Bundle>
+

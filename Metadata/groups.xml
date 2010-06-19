@@ -1,0 +1,55 @@
+<Groups version='3.0'>
+
+  <!--Mercury on AWS-->
+  <Group profile='true' public='true' name='mercury-aws'>
+    <Group name='mercury'/>
+    <Group name='amazon-web-services'/>
+  </Group>
+  
+  <!--Mercury on Rackspace/Linode-->
+  <Group profile='true' public='true' default='true' name='mercury-vps'>
+    <Group name='mercury'/>
+    <Group name='vps'/>
+  </Group>
+
+  <!-- Operating systems -->
+  <Group name='jaunty'> 
+    <Bundle name='ubuntu-jaunty'/>
+  </Group>
+  <Group name='karmic'> 
+    <Bundle name='ubuntu-karmic'/>
+  </Group>
+  <Group name='lucid'>
+    <Bundle name='ubuntu-lucid'/>
+  </Group>
+  <Group name='centos5'>
+    <Bundle name='centos5'/>
+  </Group>
+  <Group name='debian'>
+    <Bundle name='debian-lenny'/>
+  </Group>
+
+  <!-- pantheon server types -->
+  <Group name='mercury'>
+    <Bundle name='bcfg2'/>
+    <Bundle name='apache2'/>
+    <Bundle name='php'/>
+    <Bundle name='memcached'/>
+    <Bundle name='tools'/>
+    <Bundle name='mercury'/>
+    <Bundle name='mysql-packages'/>
+    <Bundle name='mysql-services'/>
+    <Bundle name='postfix'/>
+    <Bundle name='tomcat'/>
+    <Bundle name='varnish'/>
+  </Group>
+  
+  <!-- hosting providers -->
+  <Group name='amazon-web-services'>
+    <Bundle name='amazon-web-services'/>
+  </Group>  
+  <Group name='vps'>
+    <Bundle name='vps'/>
+  </Group>
+  
+</Groups>
